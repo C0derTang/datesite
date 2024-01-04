@@ -1,0 +1,116 @@
+/* style.css */
+
+body {
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center aligns text and inline-block elements */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    background-color: #ff99cc;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+img {
+    width: 50%; /* Adjust as needed */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Centers the image */
+    display: block; /* Ensures the image is a block-level element */
+    max-width: 100%
+}
+
+button {
+    background-color: #ff66a3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block; /* Allows the buttons to be centered by text-align */
+}
+
+button:hover {
+    background-color: #ff3385;
+}
+
+.button-link {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff66a3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block; /* Allows the buttons to be centered by text-align */
+
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #ff3385;
+}
+
+
+/* Centering container */
+.container {
+    width: 80%;
+    margin: 0 auto; /* Centers the container */
+    max-width: 960px;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Slightly wider container on smaller screens */
+    }
+
+    button, .button-link {
+        padding: 12px 18px; /* Moderately smaller padding for buttons */
+        font-size: 15px; /* Slightly smaller font size for buttons */
+    }
+
+    h1 {
+        font-size: 26px; /* Moderately smaller font size for heading */
+        padding: 15px; /* Smaller padding for heading */
+    }
+
+    img {
+        width: 80%; /* Adjust image width on smaller screens */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Full width container on mobile screens */
+    }
+
+    button, .button-link {
+        padding: 15px 20px; /* Adequate padding for buttons */
+        font-size: 16px; /* Maintain readable font size for buttons */
+    }
+
+    h1 {
+        font-size: 24px; /* Slightly reduced font size for heading */
+        padding: 20px; /* Adequate padding for heading */
+    }
+
+    img {
+        width: 90%; /* Good width for image on mobile screens */
+    }
+}
